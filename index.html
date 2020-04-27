@@ -31,7 +31,7 @@
 
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal"  href="#loginM">
+                    <a id="lModal" type="button">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -45,6 +45,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
                     
                 </div>
                 <div class="modal-body">
@@ -89,8 +92,8 @@
                     
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-block btn-warning" data-toggle="modal" 
-                    href="#reservation" role="button">Reserve Table</a>
+                    <a class="btn btn-block btn-warning" id="table" 
+                    role="button">Reserve Table</a>
                     
                     
                 </div>
@@ -346,8 +349,17 @@
             }
             
         });
+        
     });
+    $('#table').click(()=>{
+        $('#reservation').modal('show');
+    });
+    $('#lModal').click(()=>{
+        $('#loginM').modal('show');
+    });
+
 </script>
+
 
 </body>
 
