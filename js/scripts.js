@@ -1,6 +1,6 @@
-$(document).ready(()=>{
+$(document).ready(function(){
     $('#car').carousel({ interval:1500});
-    $('#cButton').click(()=>{
+    $('#cButton').click(function(){
         if ($('#cButton').children('span').hasClass('fa-pause')){
             $('#car').carousel('pause');
             $('#cButton').children('span').removeClass('fa-pause');
@@ -14,9 +14,9 @@ $(document).ready(()=>{
     });
     
 });
-$('#table').click(()=>{
+$('#table').click(function(){
     $('#reservation').modal('show');
 });
-$('#lModal').click(()=>{
+$('#lModal').click(function(){
     $('#loginM').modal('show');
 });
