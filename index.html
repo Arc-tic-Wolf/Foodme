@@ -334,31 +334,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(()=>{
-        $('#car').carousel({ interval:1500});
-        $('#cButton').click(()=>{
-            if ($('#cButton').children('span').hasClass('fa-pause')){
-                $('#car').carousel('pause');
-                $('#cButton').children('span').removeClass('fa-pause');
-                $('#cButton').children('span').addClass('fa-play');
-            }else {
-                $('#car').carousel('cycle');
-                $('#cButton').children('span').removeClass('fa-play');
-                $('#cButton').children('span').addClass('fa-pause');
-            }
-            
-        });
-        
-    });
-    $('#table').click(()=>{
-        $('#reservation').modal('show');
-    });
-    $('#lModal').click(()=>{
-        $('#loginM').modal('show');
-    });
-
-</script>
+<script src="js/scripts.js"></script>
 
 
 </body>
